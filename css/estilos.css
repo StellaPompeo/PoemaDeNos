@@ -2,17 +2,8 @@
 * {
   box-sizing: border-box;
   margin: 0 0 0 0;
-  padding: 0 0 0 0;  
-  grid-template-rows: none;
-  grid-template-columns: none;
-  grid-template-areas: none;
-  grid-auto-rows: auto;
-  grid-auto-columns: auto;
-  grid-auto-flow: row;
-  grid-column-gap: 0;
-  grid-row-gap: 0;
-  column-gap: normal;
-  row-gap: normal;
+  padding: 0 0 0 0; 
+  
 }
 
 
@@ -20,8 +11,7 @@
 /*----------------------- BODY ---------------------- */
 body {
   font-family: 'Sorts Mill Goudy', serif;
-  background-color: white;
-  font-size: 14px;
+  background-color: white; 
 }
 /*------------------ BREAK PAGE --------------------- */
 @media (min-width: 900px) {
@@ -40,35 +30,21 @@ body {
 /*------------------ CONTAINER --------------------- */
 .container {
   display: grid;
-  grid-template-columns: 1.5fr repeat(2, 2fr);
+  grid-template-columns: 1fr repeat(2, 2fr);
   grid-template-rows: 7rem 2rem repeat(2,10fr) 2rem;
-  column-gap: 0.3rem;
+  column-gap: 0.5rem;
   row-gap: 0.3rem;
 }
 
-/*------------------ LOGO --------------------- */
-.logo {
-   align-self: stretch;
-   grid-column: span 1; 
-   grid-row: span 1;   
-   text-align: right;
-  }
-.img-logo{
-  width: 1.5fr;
-  height: 7.3rem;   /*tamanho da linha + gap*/
-  align-content: center;
-}
-
-
-
 /*------------------ CAPA --------------------- */
-.capa {
-  align-self: start stretch;
-  grid-column: span 2;  
-  grid-row: span 1;     
+.capa {  
+  display: grid;
   text-align: center;
+  grid-column: span 3;  
+  grid-row: span 1; 
+}
+.titulo {
   padding-top: 1em;  
-  margin-right: 30em;
   transform: scale(0.2) translateX(-50vh);
   opacity: 0;
   animation: linear 2s animaTitulo forwards; /*forwards para voltar ao estado inicial*/
@@ -87,6 +63,10 @@ body {
 .subtitle {
  font-style: italic;
 }
+.img-logo{
+  width: 1.5fr;
+  height: 7.3rem;   
+}
 
 
 
@@ -96,7 +76,7 @@ body {
   align-self: end stretch;
   grid-column: span 3;
   grid-row: span 1;
-  text-align: center;  
+  text-align: center; 
 }
 .menu ul {
   display: flex;
@@ -125,23 +105,31 @@ body {
   grid-column: span 1;
   grid-row: span 2;
   margin-top: 3em;
-}
-.img-txt{
-  width: 1.5fr;
-  height: 35rem;   /*tamanho da linha + gap*/
   align-content: center;
 }
+@media (min-width: 600px) {
+  .img-txt{
+    width: 10rem;
+    height: 15rem;   /*tamanho da linha + gap*/
+  }
+ }
+ @media (min-width: 900px) {
+  .img-txt{
+    width:   15rem; 
+    height: 20rem;   
+  }
+ }
+
 
 
 
 /*------------------ TEXTO --------------------- */
 .texto {
-  align-self: start stretch;
   grid-column: span 2;
   grid-row: span 2;
   text-align: center;
+  align-content: center;
   margin-top: 3em;
-  padding-left: 15em;;
 }
 .texto-subtitle {
   text-align: left;    
@@ -149,13 +137,25 @@ body {
 }
 .assinatura{
   text-align: right;
-  margin-right: 2em;
+  margin-right: 2.5em;
 }
+@media (min-width: 600px) {
+  .texto {
+    padding-left: 2em;;
+  }
+ }
+ @media (min-width: 900px) {
+  .texto {
+    padding-left: 3em;
+  }
+ }
+
 
 
 
 /*------------------ RODAPE --------------------- */
 .rodape {
+  display: block;
   align-self: stretch;
   grid-column: span 3;
   grid-row: span 1;
@@ -163,6 +163,11 @@ body {
   text-align: right;
   margin-right: 2em;
 }
+@media (min-width: 900px) {
+  .rodape{
+    font-size: 2em; 
+  }
+ }
 .rodape a{  
   margin-left: 1.2em;  
   margin-bottom: 0.1em;
