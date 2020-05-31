@@ -110,7 +110,7 @@ body {
 @media (min-width: 600px) {
   .img-txt{
     background-color: blue;
-    width: 10rem;
+    width: 5rem;
     height: 15rem;   /*tamanho da linha + gap*/
   }
  }
