@@ -109,12 +109,14 @@ body {
 }
 @media (min-width: 600px) {
   .img-txt{
+    background-color: blue;
     width: 10rem;
     height: 15rem;   /*tamanho da linha + gap*/
   }
  }
  @media (min-width: 900px) {
   .img-txt{
+    background-color: orange;
     width:   15rem; 
     height: 20rem;   
   }
