@@ -14,14 +14,19 @@ body {
   background-color: white; 
 }
 /*------------------ BREAK PAGE --------------------- */
-@media (min-width: 900px) {
+ @media (min-width: 375px) {
   body {
-    font-size: 16px;  
+    font-size: 12px;  
   }
  }
  @media (min-width: 600px) {
   body {
-    font-size: 14px;  
+    font-size: 14px; 
+  }
+ }
+ @media (min-width: 900px) {
+  body {
+    font-size: 14px; 
   }
  }
 
@@ -45,6 +50,7 @@ body {
 }
 .titulo {
   padding-top: 1em;  
+  font-family: 'Marcellus', serif;
   transform: scale(0.2) translateX(-50vh);
   opacity: 0;
   animation: linear 2s animaTitulo forwards; /*forwards para voltar ao estado inicial*/
@@ -56,19 +62,33 @@ body {
     opacity: 1;
   }
 }
-.title {
-  font-family: 'Marcellus', serif;
-  font-size: 3em;
-}
-.subtitle {
- font-style: italic;
-}
-.img-logo{
-  width: 1.5fr;
-  height: 7.3rem;   
-}
-
-
+/*------- BREAK PAGE ------- */
+@media (min-width: 375px) {
+  .title {    
+    font-size: 2em;
+    margin-top: 0.7em;
+  }
+ }
+ @media (min-width: 600px) {
+  .title {    
+    font-size: 2em;
+    margin-top: 0.8em;
+  }
+ }
+ @media (min-width: 900px) {
+  .title {    
+    font-size: 3em;
+    margin-top: 0em;
+  }
+ }
+ .subtitle {
+  font-style: italic;
+  font-size: 1.2em;
+ }
+ .img-logo{
+   width: 1.5fr;
+   height: 7.3rem;   
+ }
 
 /*------------------ MENU --------------------- */
 .menu {
@@ -107,10 +127,17 @@ body {
   margin-top: 3em;
   align-content: center;
 }
+@media (min-width: 375px) {
+  .img-txt{
+    background-color: blue;
+    width: 7rem;
+    height: 12rem;   /*tamanho da linha + gap*/
+  }
+ }
 @media (min-width: 600px) {
   .img-txt{
     background-color: blue;
-    width: 5rem;
+    width: 10rem;
     height: 15rem;   /*tamanho da linha + gap*/
   }
  }
@@ -141,14 +168,19 @@ body {
   text-align: right;
   margin-right: 2.5em;
 }
+@media (min-width: 375px) {
+  .texto {
+    padding-left: 2em;
+  }
+ }
 @media (min-width: 600px) {
   .texto {
-    padding-left: 2em;;
+    padding-left: 2em;
   }
  }
  @media (min-width: 900px) {
   .texto {
-    padding-left: 3em;
+    padding-left: 5em;
   }
  }
 
