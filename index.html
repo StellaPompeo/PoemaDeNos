@@ -1,102 +1,95 @@
-
 <!------------------- INDEX POEMA DE NOS -------------------->
 <!DOCTYPE html>
-<html lang="en">
-<!----------------------- HEADER ------------------------>
-<head>
-  <!-- Meta Padrao -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Propriedades-->
-  <meta property="og:site_name"   content="Poemas de Nós">
-  <meta property="og:site"        content="https://stellapompeo.github.io/PoemasDeNos/">
-  <meta property="og:type"        content="poemas">
-  <meta property="og:keywords"    content="Poemas, poema, frase, carta, poetisa">
-  <!-- Descricao -->
-  <title>Poemas de Nós</title>	
-  <link rel="stylesheet" href="css/estilos.css">
-  <!--Acesso a fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
-  <!--Acesso a icones-->
-  <script src="https://kit.fontawesome.com/d721c8d6f3.js" crossorigin="anonymous"></script>
-</head>
+<html lang="pt-br">
+  <!----- Head ----->
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poema de Nós</title> 
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <!-- Propriedades-->
+    <meta property="og:site_name"   content="Poemas de Nós">
+    <meta property="og:site"        content="https://poemadenos.com.br/">
+    <meta property="og:type"        content="poemas">
+    <meta property="og:keywords"    content="Poemas, poema, frase, carta, poetisa">
+    <!--Acesso a fonts-->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">-->
+    <!--Acesso a icones-->
+    <!--<script src="https://kit.fontawesome.com/d721c8d6f3.js" crossorigin="anonymous"></script>-->
+  </head>
 
-<!------------------------ BODY ------------------------->
-<body>
-  <header>
-	<div class="container">
-		<!------------------- CAPA ---------------------->
-		<div class="capa">
-				<figure class="logo">	
-					<a><img class="img-logo" src="./img/logo.png" alt="logo"></a>
-				</figure>
-				<div class="titulo">
-					<h1 class="title">Poemas de Nós</h1>
-					<h2 class="subtitle">Poemas meus, poemas seus, poemas de nós...</h2>
-		    </ul>
-	    </div>
-		<!------------------- MENU ---------------------->
-		<div class="menu">
-			<nav class="menu">
-				<ul>
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#sobre">SOBRE</a></li>
-					<li><a href="#poemas">POEMAS</a></li>
-					<li><a href="#frases">FRASES</a></li>
-					<li><a href="#pensamentos">PENSAMENTOS</a></li>
-				</ul>
-			</nav>
-		</div>
-		<!------------------ IMAGEM --------------------->
-		<div class="imagem">
-			<figure class="img-0">	
-				<a><img class="img-txt" src="./img/0-somos_nos.png" alt="img-0"></a>
-			</figure>
-		</div>
+  <!----- Script ----->
+  <script src = "js/funcoes.js"></script>
+  <script
+      src="https://kit.fontawesome.com/6d6952c5be.js"
+      crossorigin="anonymous">
+  </script>
 
+  <!----- Body Home ----->
+  <body>
+    <div id="interface">
+    <header id="cabecalho">
+      <img id="poema" src="./img/logo.png">
+      <hgroup id="titulo">
+          <h1>Poemas de Nós</h1>
+          <h2>Poemas meus, poemas seus, poemas de nós...</h2>
+      </hgroup>
+      <!---->
+        <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul type="disc">
+            <li onmouseover="mudaPoema('./img/logo.png')" 
+                onmouseout="mudaPoema('./img/logo.png')">
+                <a href="index.html">Home</a></li>
+            <li onmouseover="mudaPoema('./img/fotos.png')" 
+                onmouseout="mudaPoema('./img/poema.png')">
+                <a href="poema.html">Poema</a></li>
+            <li onmouseover="mudaPoema('./img/pensamento.png')" 
+                onmouseout="mudaPoema('./img/logo.png')">
+                <a href="pensamento.html">Pensamento</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    <!----- Variavel da página----->
+      <section id="corpo">
+      <article id="corpo-principal">
+      <hgroup>
+        <h2>Somos Nós</h2>
+        <p>Certo dia me perguntaram o que somos</p> 
+        <p>e na hora não consegui responder</p>
+        <p>Porque afinal:</p>
+        <p>o que nós somos?</p>
+        <p>Parei pra refletir e somos exatamente isso</p>
+        <p>Somos Nós</p>
+        <p>Somos feitos de Nós</p>
+        <p>Nós fortes, resistentes</p>
+        <p>difíceis de soltar</p>
+        <p>Igual aquele que às vezes damos no cadarço</p>
+        <p>Somos entrelaçados um no outro</p>
+        <p>um pouco fraco se for se julgar só</p>
+        <p>mas quando se junta</p>
+        <p>se forma um Nó</p>
+        <p>Um Nó difícil de se desfazer</p>
+        <p>difícil de desamarrar</p>
+        <p>E o nosso amor é exatamente isso</p>
+        <p>um simples Nó</p>
+        <p>E eu e vc juntos</p>
+        <p>um simples Nós!</p>
+      </hgroup>
+    </article>
+    </section>
 
-		<!------------------- TEXTO --------------------->
-		<div class="texto">
-			<h1 class="texto-title">
-				<p>Somos Nós<br> </br></p>
-			</h1> 
-			<h2 class="texto-subtitle">
-                <p>Certo dia me perguntaram o que somos e na hora não consegui responder</p>
-				<p>Porque afinal:</p>
-				<p>o que nós somos?</p>
-				<p>Parei pra refletir e somos exatamente isso</p>
-				<p>Somos Nós</p>
-				<p>Somos feitos de Nós</p>
-				<p>Nós fortes, resistentes</p>
-				<p>difíceis de soltar</p>
-				<p>Igual aquele que às vezes damos no cadarço</p>
-				<p>Somos entrelaçados um no outro</p>
-				<p>um pouco fraco se for se julgar só</p>
-				<p>mas quando se junta</p>
-				<p>se forma um Nó</p>
-				<p>Um Nó difícil de se desfazer</p>
-				<p>difícil de desamarrar</p>
-				<p>E o nosso amor é exatamente isso</p>
-				<p>um simples Nó</p>
-				<p>E eu e vc juntos</p>
-				<p>um simples Nós!</p>
-			</h2>  
-			<h3 class="assinatura">
-			  <p>Poemas, textos e pensamentos autorais de Regina Célia Pompêo.</p>
-			</h3>       
-		</div>
-		<!------------------ RODAPE --------------------->
-		<div class="rodape">
-			<a target="_blank" 
-			   href="https://www.facebook.com.br/poemasdenos">
-			   <i class="fab fa-facebook-square"></i>
-			</a>
-			<a target="_blank" 
-			   href="https://www.instagram.com/poemasdenos/">
-			   <i class="fab fa-instagram"></i>
-			</a>				   
-		</div>
-	</div>
-  </header>
-</body>
+    <!----- Rodapé ----->
+    <footer id="rodape">
+      <h3>Poemas, textos e pensamentos autorais de Regina Célia Pompêo.</h3></br>	
+      <a target="_blank" href="https://www.instagram.com/poemasdenos/"><i class="fab fa-instagram"></i></a>	
+      <a target="_blank" href="https://www.facebook.com.br/poemasdenos"><i class="fab fa-facebook-square"></i></a></br>
+      <h4>Copyright&copy; 2020 - by Regina Pompeo </h4>
+    </footer>
+    </div>
+  </body>
 </html>
+
+
+					   

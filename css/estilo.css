@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/***** CONFIGURACAO HOME *****/
+ body {
+    background-color: #dddddd;
+    color: rgb(27, 25, 27); 
+    font-family: Arial, sans-serif;
+  }
+  div#interface {
+      width: 1000px;
+      background-color: #ffffff;
+      margin: -20px auto 0px auto;
+      box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+      padding: 10px;
+  }
+  /*configuracao padrao*/
+  h1 {
+    font-size: 30pt;
+    text-align: center;   
+  }
+  h2 {
+    font-size: 20pt; 
+    text-align: center;   
+  }
+  h3 {
+    font-size: 12pt;
+    text-align: right;
+  }
+  h4 {
+    font-size: 8pt;
+    text-align: right;
+  }
+  p {
+    text-indent: 50px;
+    text-align: center;  
+  }
+  /*titulo - logo -  menu*/
+  header#cabecalho {
+    border-bottom: 10px #992323 solid;
+    height: 150px;
+    display: flex;
+  }      
+  /*titulo e subtitulo*/
+  header#cabecalho hgroup#titulo {      
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6); 
+    text-align: center;
+    padding: 0px;
+    margin-top: 0px;
+    padding-left: 20px;
+}
+/*Formatação do Menu*/
+nav#menu {
+    display: block;   
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu li {
+    background-color: pink;
+    display: flex;
+    align-items: stretch;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;       
+}
+nav#menu li:hover {
+    background-color: #606060;
+}
+nav#menu h1 {
+    display: none;      
+}
+nav#menu a {    
+    color: #000000;
+    text-decoration: none; 
+}
+nav#menu a:hover{
+    color: #ffffff;
+}
+
+
+/***** CONFIGURACAO SOMENTE DO HTML *****/
+section#corpo {
+    float: center;
+    margin-bottom: 30px;
+}
+article#corpo-principal h2 { 
+    padding: 30px 0px 20px 50px;
+}
+
+
+
+/***** CONFIGURACAO RODAPE *****/
+footer#rodape {
+    clear: both;
+    border-top: 5px solid #992323;
+}
+footer#rodape h3 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+footer#rodape a {
+    float: right;
+    margin-top: 0px;
+    padding-right: 10px;
+    font-size: 40px;    
+}
+footer#rodape h4 {
+    margin-top: 30px;
+}
+
+
