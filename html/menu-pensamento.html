@@ -1,4 +1,4 @@
-<!------------------- INDEX POEMA DE NOS -------------------->
+<!------------------- INDEX MENU POEMA -------------------->
 <!DOCTYPE html>
 <html lang="pt-br">
   <!----- Head ----->
@@ -6,7 +6,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poema de Nós</title> 
-    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/menu-pensamento.css"/>
     <!-- Propriedades-->
     <meta property="og:site_name"   content="Poemas de Nós">
     <meta property="og:site"        content="https://poemadenos.com.br/">
@@ -17,7 +18,7 @@
   </head>
 
   <!----- Script ----->
-  <script src = "js/funcoes.js"></script>
+  <script src = "../js/funcoes.js"></script>
   <script
       src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous">
   </script>
@@ -26,7 +27,7 @@
   <body>
     <div id="interface">
     <header id="cabecalho">
-      <img id="poema" src="./img/logo.png">
+      <img id="poema" src="../img/logo.png">
       <hgroup id="titulo">
           <h1>Poemas de Nós</h1>
           <h2>Poemas meus, poemas seus, poemas de nós...</h2>
@@ -35,35 +36,46 @@
         <nav id="menu">
           <h1>Menu Principal</h1>
           <ul type="disc">
-            <li onclick="mudaPoema('index.html')">
-              <a href="index.html">Home</a>
+            <li onclick="mudaPoema('../index.html')">
+                <a href="../index.html">Home</a>
             </li>
-            <li onclick="mudaPoema('./html/menu-poema.html')">
-              <a href="./html/menu-poema.html">Poema</a>
+            <li onclick="mudaPoema('menu-poema.html')">
+                <a href="menu-poema.html">Poema</a>
             </li>
-            <li onclick="mudaPoema('./html/menu-pensamento.html')" >
-                <a href="./html/menu-pensamento.html">Pensamento</a>
+            <li onmouseover="mudaPoema('menu-pensamento.html')">
+                <a href="menu-pensamento.html">Pensamento</a>
             </li>
           </ul>
         </nav>
     </header>
     
 
-    <!------------------------------ POEMAS ---------------------------->
-    <section id="corpo">
-      <nav class="corpo">
-        </a>
-          <iframe src="./html/poema-0.html" name="poemas" scrolling="no" id="poema"></iframe> 
-        </a>
-      </nav>      
+    <!------------------------------ PENSAMENTO IMAGEM -------------------->
+    <section id="pensamento">
+       <nav id="pensamento">
+            <header id="pensamento">
+                <h2>Pensamentos</h2>
+            </header>
+                <ul id="pensamento">            
+                    <li> 
+                    <a>
+                        <img class="imgp" src="../img/seus_olhos.png" alt="Seus olhos">
+                    </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img class="imgp" src="../img/talvez.png" alt="Talvez">
+                        </a>
+                    </li>
+                </ul>
+        </nav>
     </section>
     <!----------------------------------------------------------------->
 
 
-
     <aside id="volta">
       <p class="volta">
-        <a href="index.html">Página inicial</a>
+        <a href="menu-poema.html">Página inicial</a>
       </p>
     </aside>
     

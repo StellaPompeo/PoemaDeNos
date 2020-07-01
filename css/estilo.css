@@ -2,11 +2,21 @@
 
 /***** CONFIGURACAO HOME *****/
  body {
-    background-color: #dddddd;
+    background-color: #ffffff;
     color: rgb(27, 25, 27); 
     font-family: Arial, sans-serif;
   }
-  div#interface {
+
+/****************  BREAK PAGE ****************/
+@media (min-width: 1000px) {
+    body {
+        resize: horizontal;
+    }
+   }
+/********************************************************/
+
+
+  div#interface {      
       width: 1000px;
       background-color: #ffffff;
       margin: -20px auto 0px auto;
@@ -24,11 +34,9 @@
   }
   h3 {
     font-size: 12pt;
-    text-align: right;
   }
   h4 {
     font-size: 8pt;
-    text-align: right;
   }
   p {
     text-indent: 50px;
@@ -36,9 +44,12 @@
   }
   /*titulo - logo -  menu*/
   header#cabecalho {
+    position: fixed;
     border-bottom: 10px #992323 solid;
     height: 150px;
-    display: flex;
+    display: flex;  
+    background-color: white;  
+    min-width:  1000px;    
   }      
   /*titulo e subtitulo*/
   header#cabecalho hgroup#titulo {      
@@ -46,7 +57,7 @@
     text-align: center;
     padding: 0px;
     margin-top: 0px;
-    padding-left: 20px;
+    padding-left: 20px;    
 }
 /*Formatação do Menu*/
 nav#menu {
@@ -79,34 +90,66 @@ nav#menu a:hover{
 }
 
 
-/***** CONFIGURACAO SOMENTE DO HTML *****/
-section#corpo {
-    float: center;
-    margin-bottom: 30px;
-}
-article#corpo-principal h2 { 
-    padding: 30px 0px 20px 50px;
-}
 
+
+/********** CHAMADA DO HTML POEMA PRINCIPAL ************/
+.corpo  {       
+    min-width:  1000px;
+    min-height: 800px;
+    display: flex;
+    align-items: justify;
+    margin-top: 150px;
+}
+iframe#poema {
+    min-height: 800px;
+    min-width:  998px;
+}
+/*********************************************/
+
+
+
+
+
+
+/** RETORNA PAGINA INICIAL **/
+aside#volta a {
+    float: right;
+    text-decoration: none; 
+    font-size: 12pt;
+    color: #606060;
+    padding-bottom: 10px;
+}
+aside#volta a:hover {
+  text-decoration: underline;
+}
 
 
 /***** CONFIGURACAO RODAPE *****/
 footer#rodape {
-    clear: both;
+    clear: both;    
     border-top: 5px solid #992323;
+    height: 90px;
 }
 footer#rodape h3 {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 0px;
+    text-align: right;
 }
 footer#rodape a {
     float: right;
-    margin-top: 0px;
     padding-right: 10px;
-    font-size: 40px;    
+    font-size: 40px;
+    color: rgb(145, 9, 72);  
+    transition: background-color 1s;  
+    text-decoration: none;  
+}
+footer#rodape a:hover {
+    background-color: #ffffff;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9); 
 }
 footer#rodape h4 {
-    margin-top: 30px;
+    margin-top: 35px;
+    float: left;
 }
 
 

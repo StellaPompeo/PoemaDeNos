@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/***** CONFIGURACAO POEMAS *****/
+body#poema {
+    background-color: rgb(207, 193, 240);
+}
+section#poema {  
+    display: block;
+    block-size: 1000px;
+    padding-right: 15px;
+}
+
+article#poema {
+  margin: 10px;
+  padding: 5px 0px 5px 10px;
+}
+
+
+article#poema h2 {
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
